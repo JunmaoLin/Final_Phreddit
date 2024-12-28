@@ -1,0 +1,322 @@
+#buttonSection{
+    display:inline-flex;
+}
+
+.postTitle{
+    display:block;
+}
+
+.comName{
+    display:inline;
+    font-weight: bold;
+}
+
+#postInfo{
+    margin: 0.5rem 0 1rem 0;
+}
+
+.content{
+    margin:  1rem 0 1rem 0;
+}
+
+.timeStamp{
+    display:inline;
+    color: #576F76;
+}
+
+#left-side{
+    flex-wrap: nowrap;
+    /* display:inline-flex; */
+    margin: 0 0.5rem 0 0.5rem;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+button{
+    background-color: grey;
+    color: white;
+    border-radius: 24px;
+    border: none;
+    width: 80px;
+    height: 40px;
+    font-size: 15px;
+}
+button:hover{
+    background-color: rgb(255, 69, 1);
+    cursor: pointer;
+}
+
+.rightSide{
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    float:right;
+    padding: 0 .5rem 0 .5rem;
+    margin: 0 .5rem 0 .5rem;
+    /* background-color: white; */
+    height: 30px;
+    border-radius: 24px;
+}
+
+@media (max-width: 1000px) {
+    #buttonSection {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        float: none; 
+    }
+    .rightSide {
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        float: none; 
+        width: 100%;
+    }
+}
+
+#header{
+    display:flex;
+    justify-content: space-between; 
+    padding: 0.5rem 0 0.75rem 0;
+    border-bottom: 1px solid rgb(210, 210, 210);
+    height: auto;
+}
+
+#homePage{
+    width:100%;
+    height: calc(100vh - 57px);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.posts{
+    padding: .5rem .5rem .5rem .5rem;
+    width:97%;
+    /* overflow-x: auto; */
+}
+
+.noPostsImage {
+       /* Absolute positioning to cover the entire container */
+    top: 0;
+    left: 0;
+    width: 75%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#noSearchIcon {
+    object-fit: contain;  /* Ensure the image fits within the container */
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.post{
+    /* justify-content: space-between; */
+    max-height: 600px;
+    border-bottom:2px dotted rgb(210, 210, 210);
+    margin: .5rem 0 .5rem 0;
+}
+.postUserInfoStyle{
+    max-height: 600px;
+    border-top: 1px solid rgb(210, 210, 210);
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.userDeletePostButton{
+    margin-bottom: 10px;
+}
+
+.post:hover{
+    cursor: pointer;
+    background-color: #f2f4f5;
+}
+.postUserInfoStyle:hover{
+    cursor: pointer;
+    background-color: #f2f4f5;
+}
+
+.topOfPost{
+    display:flex;
+    border-bottom: 1px solid rgb(210, 210, 210);
+}
+
+span{
+    padding:0 1rem 0 1rem;
+}
+
+.linkFlair{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 .5rem 0 .5rem;
+    background-color: white;
+    font-size: 15px;
+    height: 25px;
+    border-radius: 15px;
+    border:1px solid rgb(210, 210, 210);
+}
+
+.counters{
+    padding: 0 .2rem 0 .2rem;
+    /* margin: .2rem 0 .2rem 0; */
+    margin-right: 5px;
+    margin-bottom: 2px;
+}
+.counterDivs{
+    margin-right: 5px;
+    margin-bottom: 2px;
+    display: inline-flex;
+}
+
+#viewIcon{
+    display:inline;
+    vertical-align:middle;
+}
+/* text font will be font-family: verdana, arial, helvetica, sans-serif;*/
+
+#noSearchIcon{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+    margin-bottom: auto;
+    height: 150px;
+    width: 150px;
+}
+
+#memberCountIcon{
+    display: inline;
+    vertical-align: middle;
+    height: 30px;
+    width: 30px;
+}
+
+#postCountIcon{
+    display: inline;
+    vertical-align: middle;
+    height: 20px;
+    width: 20px;
+}
+
+.voteDiv{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 .5rem 0 .5rem;
+    background-color: white;
+    font-size: 15px;
+    height: 25px;
+    border-radius: 15px;
+    border:1px solid rgb(210, 210, 210);
+}
+
+#create_comment_button:disabled:hover{
+    cursor: not-allowed;
+    background-color: grey;
+}
+
+/* up and down vote icons */
+.upVoteButton{
+    width: 20px;
+    height: 20px;
+    padding: 0px;
+    margin: 4px;
+    background-color: rgb(93, 187, 93);
+    border-radius:10px;
+
+}
+.upVoteButton:hover{
+    background-color: rgb(0, 252, 0);
+}
+.upvoteIcon{
+    height: 20px;
+    width: 20px;
+}
+
+.downVoteButton{
+    width: 20px;
+    height: 20px;
+    padding: 0px;
+    margin: 4px;
+    background-color: rgb(251, 131, 87);
+    border-radius:10px;
+}
+.downVoteButton:hover{
+    background-color: rgb(255, 68, 0);
+}
+.downvoteIcon{
+    height: 20px;
+    width: 20px;
+}
+
+.upVoteButton:disabled{
+    cursor: not-allowed;
+    background-color: grey;
+}
+.downVoteButton:disabled{
+    cursor: not-allowed;
+    background-color: grey;
+}
+
+.HomePageUpVoteButton{
+    width: 20px;
+    height: 20px;
+    padding: 0px;
+    margin: 4px;
+    background-color: rgb(93, 187, 93);
+    border-radius:10px;
+}
+.HomePageUpVoteButton:hover{
+    background-color: rgb(93, 187, 93);
+    cursor: unset;
+}
+.HomePageDownVoteButton{
+    width: 20px;
+    height: 20px;
+    padding: 0px;
+    margin: 4px;
+    background-color: rgb(251, 131, 87);
+    border-radius:10px;
+    cursor: unset;
+}
+.HomePageDownVoteButton:hover{
+    background-color: rgb(251, 131, 87);
+    cursor: unset;
+}
+.HomePageUpVoteButton:disabled{
+    cursor: unset;
+    background-color: grey;
+}
+.HomePageDownVoteButton:disabled{
+    cursor: unset;
+    background-color: grey;
+}
+
+.commentVoteDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 .5rem 0 .5rem;
+    background-color: white;
+    font-size: 15px;
+    height: 25px;
+    border-radius: 15px;
+    border:1px solid rgb(210, 210, 210);
+    width: 60px;
+    cursor: unset;
+}
+
+#totalPostDiv{
+    display: inline-flex;
+    justify-content: left;
+    margin-left: 10px;
+}
+#spanSpacing{
+    padding: 0px;
+    padding-left: 5px;
+}

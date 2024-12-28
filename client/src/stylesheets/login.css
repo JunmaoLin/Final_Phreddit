@@ -1,0 +1,87 @@
+#loginFormContainer{
+    display: block;
+    /* padding: 16px; */
+    /* background-color: white; */
+    width: 100vw;
+    /* height: calc(100vh - 90px); */
+    overflow-y: scroll;
+    background-color: rgb(255, 180, 153);
+}
+
+#loginForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 20px;
+    height: 100vh;
+}
+label{
+    display: block;
+}
+
+#button-group{
+    display: flex;
+    justify-content: left;
+    margin-right: 7%;
+}
+
+.form-control{
+    border: none;
+    background-color: rgb(229, 235, 238);
+    height: 50px;
+    width: 90%;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+#submitLoginFormButton{
+    background-color: rgb(11, 69, 156);
+    color: white;
+    border-radius: 24px;
+    border: none;
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+#submitLoginFormButton:hover{
+    background-color: rgb(10, 47, 108);
+    cursor: pointer;
+}
+
+#cancelLoginFormButton{
+    background-color: rgb(229, 235, 238);
+    color: black;
+    border-radius: 24px;
+    border: none;
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    margin-top: 10px;
+}
+#cancelLoginFormButton:hover{
+    background-color: rgb(219, 228, 233);
+    cursor: pointer;
+}
+
+.required-indicator{
+    color: red;
+    padding: 0px;
+}
+.error-message{
+    display: block;
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,21 @@
+.comment_style{
+    display: inline-block;
+    margin: 1rem 0 1rem 0;
+    border-radius: 20px;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    border:1px solid rgb(210, 210, 210);
+    /* word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 50%; */
+}
+
+#postMainDiv{
+    width: 100%;
+    height: calc(100vh - 57px);
+    overflow-y: auto;
+}
+
+.replyButton:disabled:hover {
+    cursor: not-allowed; /* Prevent hover effect */
+    background-color: grey; /* Maintain a consistent look */
+}

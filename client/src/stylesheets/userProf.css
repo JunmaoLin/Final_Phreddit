@@ -1,0 +1,82 @@
+h3{
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+p{
+    margin: 0px;
+}
+
+.userCommunities{
+    margin-bottom: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-top: 1px solid rgb(193, 196, 197);
+}
+.userCommunities:hover{
+    background-color: rgb(238, 238, 238);
+    cursor: pointer;
+}
+
+.userCommunitiesName{
+    font-weight: bold;
+}
+
+.userCommunitiesComment{
+    border-top: 1px solid rgb(193, 196, 197);
+    width: 100%;
+}
+
+.userButtons{
+    margin-right: 5px;
+}
+
+.deleteButton{
+    margin-bottom: 5px;
+}
+
+.deleteCommunityButton{
+    margin-bottom: 10px;
+}
+
+.deleteCommentButton{
+    margin-bottom: 10px;
+}
+
+.userAccounts{
+    margin-left: 10px;
+    border-top: 1px solid rgb(193, 196, 197);
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+.userAccountsSpaceDivTag{
+    margin-top: 10px;
+}
+.userAccountDiv:hover{
+    background-color: rgb(238, 238, 238);
+    cursor: pointer;
+}
+
+.userComments{
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* margin: 1rem 0 1rem 0; */
+    border-radius: 20px;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    border:1px solid rgb(210, 210, 210);
+}
+
+.userAccountDiv{
+    all: unset;
+    display: block;
+    width: 100%;
+}
+.userComments:hover{
+    background-color: rgb(238, 238, 238);
+    cursor: pointer;
+}
+
+#noUserAccountPTag{
+    margin-left: 10px;
+}

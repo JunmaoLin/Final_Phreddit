@@ -1,0 +1,117 @@
+#bannerDiv { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 56px;
+    margin: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 1px solid black;
+}
+
+/* phredditDiv */
+#phredditDiv{
+    display: flex;
+    justify-content: left;
+    width: 15%
+}
+#phredditATage{
+    text-decoration: none;
+}
+#phredditATage:hover{
+    cursor: pointer;
+}
+#phredditLogo{
+    font-family: arial, helvetica, sans-serif;
+    font-size: xx-large;
+    font-style: bold;
+    color: rgb(255, 69, 1);
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+/* searchBarDiv */
+#searchBarDiv{
+    padding-left: 30px;
+    padding-right: 20px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+#searchBar{
+    border: none;
+    background-color: rgb(229, 235, 238);
+    height: 40px;
+    width: 70%;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 32px;
+
+    font-size: 15px;
+}
+::placeholder{
+    color: rgb(104, 119, 126);
+}
+
+/* createPostDiv */
+#createPostDiv{
+    width: 15%;
+    display: flex;
+    justify-content: right;
+}
+
+#userProfileDiv{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#userProfileButton{
+    background-color: rgb(255, 92, 32); 
+    color: white; 
+    border-radius: 24px;
+    border: none;
+    cursor: unset;
+    width: 80px;
+    height: 40px;
+    font-size: 15px;
+}
+#userProfileButton:hover{
+    background-color: rgb(238, 64, 0);
+    cursor: pointer;
+}
+#userProfileButton:disabled{
+    background-color: rgb(255, 69, 1);
+    cursor: unset;
+}
+
+/* #createPostButton{
+    background-color: grey;
+    color: white;
+    border-radius: 24px;
+    border: none;
+    width: 80px;
+    height: 40px;
+    font-size: 15px;
+}
+#createPostButton:hover{
+    background-color: rgb(255, 69, 1);
+    cursor: pointer;
+} */
+
+#logoutButton{
+    background-color: red;
+    color: white;
+    border-radius: 24px;
+    border: none;
+    cursor: pointer;
+    width: 80px;
+    height: 40px;
+    font-size: 15px;
+}
+#logoutButton:hover{
+    background-color: rgb(179, 21, 21);
+    cursor: pointer;
+}
